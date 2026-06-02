@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = '';
+const API_BASE_URL = import.meta.env.VITE_API_URL || '';
 
 export const getVideoInfo = async (videoUrl) => {
   const videoId = extractVideoId(videoUrl);
